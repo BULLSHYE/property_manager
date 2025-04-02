@@ -80,26 +80,26 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL backend
-#         'NAME': 'db-property',  # Your database name (make sure this matches the actual database name in Aurora)
-#         'USER': 'postgres',  # The master username for your DB
-#         'PASSWORD': 'SwiftDev123',  # The password for your DB user
-#         'HOST': 'db-property-instance-1.c3qoyckyckba.eu-north-1.rds.amazonaws.com',  # The RDS Writer endpoint
-#         'PORT': '3306',  # Default PostgreSQL port
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'property_db',  # Your database name
-        'USER': 'admin',  # The master username for your DB
-        'PASSWORD': 'Swiftdev1234',  # The password for your DB user
-        'HOST': 'database-1.c3qoyckyckba.eu-north-1.rds.amazonaws.com',  # The RDS/Aurora endpoint (No 'http://', just the endpoint)
-        'PORT': '3306',  # Default MySQL port
+        'ENGINE': 'django.db.backends.postgresql',  # Use PostgreSQL backend
+        'NAME': 'property1',  # Your database name (make sure this matches the actual database name in Aurora)
+        'USER': 'postgres',  # The master username for your DB
+        'PASSWORD': 'SwiftDev123',  # The password for your DB user
+        'HOST': 'db-property-instance-1.c3qoyckyckba.eu-north-1.rds.amazonaws.com',  # The RDS Writer endpoint
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'property_db',  # Your database name
+#         'USER': 'admin',  # The master username for your DB
+#         'PASSWORD': 'Swiftdev1234',  # The password for your DB user
+#         'HOST': 'database-1.c3qoyckyckba.eu-north-1.rds.amazonaws.com',  # The RDS/Aurora endpoint (No 'http://', just the endpoint)
+#         'PORT': '3306',  # Default MySQL port
+#     }
+# }
 
 # DATABASES = {
 #     'default': {
